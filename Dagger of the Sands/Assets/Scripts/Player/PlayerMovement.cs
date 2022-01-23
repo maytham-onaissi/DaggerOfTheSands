@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump")]
     [SerializeField] private float jumpPower;
 
+    //Sound effects
     [Header("SFX")]
     [SerializeField] private AudioClip jumpSound; 
     [SerializeField] private AudioClip meleeSound; 
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         Movement();
     }
 
+    //General method for movement. 
     private void Movement()
     {
         HorziontalMovement();
@@ -46,9 +48,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void HorziontalMovement()
     {
+        //Cach the horzionatl input. 
         horizontalInput = Input.GetAxis("Horizontal");
+
+        //Moves the player according to input.
         rigidBody.velocity = new Vector2(horizontalInput * movementSpeed, rigidBody.velocity.y);
 
+        //flips player according to their direction. 
         if(horizontalInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -57,22 +63,34 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1,1,1);
         }
-        anim.SetBool("Run", horizontalInput != 0);
+
+        //Player the running animation. 
+        anim.SetBool("isRunning", isMoving());
 
     }
 
+    //Jumping method.
     private void Jump(float _jumpPower)
     {
+        //Check if the player pressed "space" and is not on the ground. 
         if (Input.GetKey(KeyCode.Space) && isGrounded())
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, _jumpPower);
+            //Play the jump animation. 
             anim.SetTrigger("Jump");
         }
     }
 
+    //Checks if the player is on the ground by casting a box collider that starts from the center of the character to the ground. 
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
+    }
+
+    //Checks if the player is moving and not jumping. 
+    private bool isMoving()
+    {
+        return isGrounded() && horizontalInput != 0;
     }
 }
