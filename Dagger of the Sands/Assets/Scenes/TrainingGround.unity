@@ -137,12 +137,12 @@ PrefabInstance:
     - target: {fileID: 1561100496794585882, guid: fe2a312dd43259347b293dacf5a97e7a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27
+      value: 95.9
       objectReference: {fileID: 0}
     - target: {fileID: 1561100496794585882, guid: fe2a312dd43259347b293dacf5a97e7a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.7
+      value: -1.08
       objectReference: {fileID: 0}
     - target: {fileID: 1561100496794585882, guid: fe2a312dd43259347b293dacf5a97e7a,
         type: 3}
@@ -221,14 +221,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 547060479}
-    - target: {fileID: 1550870495, guid: b98289eaca929394682cd4e0076ef361, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1555105814, guid: b98289eaca929394682cd4e0076ef361, type: 3}
-      propertyPath: m_Name
-      value: BatHandler
-      objectReference: {fileID: 0}
     - target: {fileID: 1789288387, guid: b98289eaca929394682cd4e0076ef361, type: 3}
       propertyPath: m_Camera
       value: 

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool allAcquired;
 
     [Header("Classes")]
     [SerializeField] public Jump Jump;
@@ -56,8 +57,20 @@ public class PlayerController : MonoBehaviour
         {
             isGamePaused = pauseMenuScript.GameIsPaused;
         }
+
+        AllAcquired();
     }
 
+    private void AllAcquired()
+    {
+        if (allAcquired)
+        {
+            health.isFlaskAquired = true;
+            serpentFangs.secondGemEmbedded = true;
+            serpentStep.thirdGemEmbedded = true;
+            jumpController.isDaggerObtained = true;
+        }
+    }
     public void NotifyPlayer()
     {
         notifyPlayer.SetActive(true);

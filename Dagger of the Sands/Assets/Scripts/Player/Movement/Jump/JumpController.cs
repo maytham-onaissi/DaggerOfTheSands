@@ -1,16 +1,18 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 public class JumpController : MonoBehaviour
 {
-    [Header("General")]
+    [Header("Classes")]
     [SerializeField] public Jump Jump;
     [SerializeField] public DoubleJump doubleJump;
     [SerializeField] PlayerController playerController;
 
+    [Header("General")]
     private bool canDoubleJump;
-    [SerializeField] private bool isDaggerObtained;
+    [SerializeField] public bool isDaggerObtained;
+    [SerializeField] public float jumpForce;
+    [SerializeField] public float doubleJumpForce;
     private string doubleJumpAnim = "DoubleJump";
     private string JumpAnim = "Jump";
     int count;
@@ -29,7 +31,7 @@ public class JumpController : MonoBehaviour
         {
             playerController.anim.SetBool("isGrounded", false);
             //playerController.anim.SetBool(doubleJumpAnim, false);
-            canDoubleJump = false;
+            //canDoubleJump = false;
         }
 
         if (!playerController.isGamePaused)
@@ -70,28 +72,25 @@ public class JumpController : MonoBehaviour
     {
         if (playerController.playerInputScript.jumpInput)
         {
-            if (playerController.playerSpaceDetection.IsGrounded() || canDoubleJump)
+            playerController.anim.SetBool("Run", false);
+            playerController.anim.SetBool("Idle", false);
+
+            if (playerController.playerSpaceDetection.IsGrounded())
             {
-                playerController.rigidBody.velocity = new Vector2(playerController.rigidBody.velocity.x,
-                    canDoubleJump ? playerController.doubleJump.doubleJumpForce : playerController.Jump.jumpForce);
-                if (!canDoubleJump)
+                playerController.rigidBody.AddForce(Vector2.up * jumpForce);
+                playerController.anim.SetBool("isGrounded", true);
+                FindObjectOfType<AudioManager>().PlaySound("Jump");
+                canDoubleJump = true;
+            }
+            else
+            {
+                if (canDoubleJump)
                 {
-                    playerController.anim.SetBool("isGrounded", true);
-                    FindObjectOfType<AudioManager>().PlaySound("Jump");
-                }
-                else if (canDoubleJump)
-                {
+                    canDoubleJump = false;
+                    playerController.rigidBody.AddForce(Vector2.up * doubleJumpForce);
                     playerController.anim.SetTrigger(doubleJumpAnim);
-                    count++;
                     FindObjectOfType<AudioManager>().PlaySound("DoubleJump");
                 }
-
-
-                playerController.anim.SetBool("Run", false);
-                playerController.anim.SetBool("Idle", false);
-                Debug.Log(canDoubleJump + "" + count);
-                canDoubleJump = !canDoubleJump;
-                Debug.Log(canDoubleJump + "" + count);
             }
 
         }
@@ -104,6 +103,7 @@ public class JumpController : MonoBehaviour
         }
     }
 
+
     private void beforeDaggerJumpAbility()
     {
 
@@ -112,13 +112,14 @@ public class JumpController : MonoBehaviour
         {
             if (playerController.playerSpaceDetection.IsGrounded())
             {
-                playerController.rigidBody.velocity = new Vector2(playerController.rigidBody.velocity.x, playerController.Jump.jumpForce);
-
+                playerController.rigidBody.AddForce(Vector2.up * jumpForce);
 
                 playerController.anim.SetBool("isGrounded", true);
+
                 FindObjectOfType<AudioManager>().PlaySound("Jump");
 
                 playerController.anim.SetBool("Run", false);
+
                 playerController.anim.SetBool("Idle", false);
             }
 

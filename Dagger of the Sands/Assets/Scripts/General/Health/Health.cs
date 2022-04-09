@@ -8,6 +8,9 @@ public class Health : MonoBehaviour
     [SerializeField] PlayerController playerController;
     [SerializeField] GameObject healthUI;
 
+    [Header("Parent Object")]
+    [SerializeField] GameObject playerHandler;
+
     [Header("Specifications")]
     [SerializeField] public int healAmount;
     [SerializeField] public int manaConsumption;
@@ -19,7 +22,7 @@ public class Health : MonoBehaviour
     [SerializeField] public bool isFlaskAquired = false;
 
     [Header("Death")]
-    private bool dead;
+    public bool dead;
 
 
     [Header("VFX")]
@@ -30,11 +33,23 @@ public class Health : MonoBehaviour
     public static bool invulnerable;
 
     [Header("Components")]
-    [SerializeField] private Behaviour[] components;
+    [SerializeField] private List<Behaviour> components;
 
 
     private void Awake()
     {
+        foreach (Behaviour component in gameObject.GetComponents<Behaviour>())
+        {
+                components.Add(component);
+
+            if (component == GetComponent<BoxCollider2D>())
+                    components.Remove(component);
+
+            if (component == GetComponent<Animator>())
+                components.Remove(component);
+
+        }
+
         totalHealth = playerController.playerStatus.totalHealth;
         playerController.playerStatus.currentHealth = totalHealth;
         currentHealth = playerController.playerStatus.currentHealth;
@@ -72,32 +87,29 @@ public class Health : MonoBehaviour
             //Hurt animation.
             playerController.anim.SetTrigger("Hurt");
 
-            //AudioManager.instance.PlaySound(hurtSound);
         }
         else
         {
             if (!dead)
             {
 
-                MiniDeathJump();
-                
-                foreach (Behaviour component in gameObject.GetComponents<Behaviour>()) 
-                {
-                    if (component != gameObject.GetComponent<BoxCollider2D>())
-                        component.enabled = false;
-                }
-
-                GetComponent<Animator>().enabled = true;
-
-
-                playerController.anim.SetBool("Die", true);
-
-                //FindObjectOfType<LevelManager>().Restart();
-                dead = true;
-               //AudioManager.instance.PlaySound(deathSound);
+                StartCoroutine(Die());
             }
         }
 
+    }
+
+    public IEnumerator Die()
+    {
+        foreach (Behaviour component in components)
+        {
+            component.enabled = false;
+        }
+
+        //Die animation.
+        playerController.anim.SetBool("Die", true);
+        yield return new WaitForSeconds(1f);
+        dead = true;
     }
 
     public IEnumerator FlaskAcquire()
@@ -118,13 +130,6 @@ public class Health : MonoBehaviour
         StartCoroutine(FlaskAcquire());
     }
 
-    public void MiniDeathJump()
-    {
-        playerController.rigidBody.velocity = new Vector2(playerController.rigidBody.velocity.x, playerController.Jump.jumpForce / 2);
-    }
-
-    
-
     public void heal(float _value)
     {
         playerController.playerStatus.currentHealth = Mathf.Clamp(playerController.playerStatus.currentHealth + _value, 1, totalHealth);
@@ -138,9 +143,21 @@ public class Health : MonoBehaviour
     {
         playerController.playerStatus.totalHealth = Mathf.Clamp(playerController.playerStatus.totalHealth + _value, totalHealth, 10);
         heal(_value);
-        healthUI.GetComponent<HealthUI>().IncreaseTotalHealth();
+        healthUI.GetComponent<HealthUI>().ReturnToFullHealth();
     }
         
+    public void ReturnToFullHealth(float _value)
+    {
+        playerController.playerStatus.currentHealth = Mathf.Clamp(playerController.playerStatus.currentHealth + _value, 1, totalHealth);
+        currentHealth = playerController.playerStatus.currentHealth;
+        healthUI.GetComponent<HealthUI>().SetHealUI();
+
+    }
+    public void ReturnFullHealthUI()
+    {
+        ReturnToFullHealth(totalHealth);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))

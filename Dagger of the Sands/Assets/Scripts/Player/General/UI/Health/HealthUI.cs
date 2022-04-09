@@ -19,7 +19,7 @@ public class HealthUI : MonoBehaviour
 
     }
 
-    public void IncreaseTotalHealth()
+    public void ReturnToFullHealth()
     {
         totalHealth.fillAmount = health.totalHealth / 10;
         currentHealth.fillAmount = health.currentHealth / 10;

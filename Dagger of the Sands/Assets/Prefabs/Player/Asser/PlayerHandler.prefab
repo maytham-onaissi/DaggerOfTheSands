@@ -513,6 +513,14 @@ PrefabInstance:
       propertyPath: etched_Remnants_2
       value: 
       objectReference: {fileID: 1561100495635921212}
+    - target: {fileID: 2140796786, guid: b90a94fc2fd8ec2428d7c051c73f8bfa, type: 3}
+      propertyPath: yWallForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140796786, guid: b90a94fc2fd8ec2428d7c051c73f8bfa, type: 3}
+      propertyPath: xWallForce
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6417940190876778833, guid: b90a94fc2fd8ec2428d7c051c73f8bfa,
         type: 3}
       propertyPath: m_Name
@@ -536,12 +544,12 @@ PrefabInstance:
     - target: {fileID: 6417940190876778839, guid: b90a94fc2fd8ec2428d7c051c73f8bfa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6417940190876778839, guid: b90a94fc2fd8ec2428d7c051c73f8bfa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6417940190876778839, guid: b90a94fc2fd8ec2428d7c051c73f8bfa,
         type: 3}
