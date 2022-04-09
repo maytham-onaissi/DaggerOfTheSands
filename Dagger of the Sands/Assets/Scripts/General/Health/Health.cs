@@ -106,9 +106,11 @@ public class Health : MonoBehaviour
             component.enabled = false;
         }
 
-        //Die animation.
+        //Death animation.
         playerController.anim.SetBool("Die", true);
+
         yield return new WaitForSeconds(1f);
+
         dead = true;
     }
 

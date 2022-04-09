@@ -5,29 +5,26 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] Transform spawnPoint;
-    [SerializeField] CircleCollider2D circleCollider;
+    [SerializeField] BoxCollider2D boxCollider;
     [SerializeField] bool inRange;
 
     // Start is called before the first frame update
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        circleCollider = GetComponent<CircleCollider2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(RespawnPlayer());
+        RespawnPlayer();
     }
 
-    public IEnumerator RespawnPlayer()
+    public  void RespawnPlayer()
     {
         if (player.GetComponent<Health>().dead && inRange)
         {
-            yield return new WaitForSeconds(1f);
-
             player.position = transform.position;
 
             foreach (Behaviour component in player.gameObject.GetComponents<Behaviour>())
