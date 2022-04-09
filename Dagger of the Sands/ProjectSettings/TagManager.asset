@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Ground
+  - Enemy
+  - PlayerHandler
   layers:
   - Default
   - TransparentFX
@@ -13,17 +17,17 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Ground
+  - Building
+  - SceneExit
+  - ForeGround
+  - Wall
+  - Map
+  - Projectile
+  - TutorialUI
+  - EnemyProjectile
   - 
   - 
   - 
@@ -40,4 +44,40 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 2788273833
+    locked: 0
+  - name: SceneExit
+    uniqueID: 4094097419
+    locked: 0
+  - name: Cloud
+    uniqueID: 2230377651
+    locked: 0
+  - name: Building
+    uniqueID: 928454409
+    locked: 0
+  - name: Decoration
+    uniqueID: 3101885527
+    locked: 0
+  - name: ForeGround
+    uniqueID: 79918373
+    locked: 0
+  - name: Ground
+    uniqueID: 1153117341
+    locked: 0
+  - name: NPC
+    uniqueID: 62606609
+    locked: 0
+  - name: Player
+    uniqueID: 759612207
+    locked: 0
+  - name: Enemy
+    uniqueID: 3270473905
+    locked: 0
+  - name: Front Decoration
+    uniqueID: 2498117603
+    locked: 0
+  - name: Map
+    uniqueID: 3221958501
     locked: 0

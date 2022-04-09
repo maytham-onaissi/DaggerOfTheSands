@@ -1,0 +1,812 @@
+fileFormatVersion: 2
+guid: f75220097eb3d5d409ede9bcf7bb9745
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4956617893760403718
+    second: snake_yellow_0
+  - first:
+      213: 6015319501069441085
+    second: snake_yellow_1
+  - first:
+      213: -937957203969908906
+    second: snake_yellow_2
+  - first:
+      213: -2659148626443167095
+    second: snake_yellow_3
+  - first:
+      213: -3812292474986182018
+    second: snake_yellow_4
+  - first:
+      213: 8223415007375011970
+    second: snake_yellow_5
+  - first:
+      213: 950165839514018745
+    second: snake_yellow_6
+  - first:
+      213: 4508999655711650215
+    second: snake_yellow_7
+  - first:
+      213: -4450483752682463195
+    second: snake_yellow_8
+  - first:
+      213: -7491686795331601660
+    second: snake_yellow_9
+  - first:
+      213: -3415853066046347437
+    second: snake_yellow_10
+  - first:
+      213: 6897814713085344638
+    second: snake_yellow_11
+  - first:
+      213: -7053345769866110350
+    second: snake_yellow_12
+  - first:
+      213: 6782186976279780718
+    second: snake_yellow_13
+  - first:
+      213: 811582491476991189
+    second: snake_yellow_14
+  - first:
+      213: 5081435698514295294
+    second: snake_yellow_15
+  - first:
+      213: -8188243106934396876
+    second: snake_yellow_16
+  - first:
+      213: -1243899530421808207
+    second: snake_yellow_17
+  - first:
+      213: 3124417676598788229
+    second: snake_yellow_18
+  - first:
+      213: -724872226316595023
+    second: snake_yellow_19
+  - first:
+      213: 8762713636396409991
+    second: snake_yellow_20
+  - first:
+      213: 2304097088033015921
+    second: snake_yellow_21
+  - first:
+      213: 1577942090260858962
+    second: snake_yellow_22
+  - first:
+      213: -1544797556739796621
+    second: snake_yellow_23
+  - first:
+      213: 3837941125294775228
+    second: snake_yellow_24
+  - first:
+      213: 6921825999653128064
+    second: snake_yellow_25
+  - first:
+      213: 2550979329674922640
+    second: snake_yellow_26
+  - first:
+      213: -2216736833666369586
+    second: snake_yellow_27
+  - first:
+      213: 8363547337135231342
+    second: snake_yellow_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snake_yellow_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 262
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6090fec86b179c440800000000000000
+      internalID: 4956617893760403718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 262
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3859b73735ba7350800000000000000
+      internalID: 6015319501069441085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 262
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fdada74e4bbf2f0800000000000000
+      internalID: -937957203969908906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 262
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a13ebb96ec81bd0800000000000000
+      internalID: -2659148626443167095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_4
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 262
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7acd804134081bc0800000000000000
+      internalID: -3812292474986182018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 262
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280343331607f1270800000000000000
+      internalID: 8223415007375011970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 198
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3a1fdfbcaaf2d00800000000000000
+      internalID: 950165839514018745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 198
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a13d031c4f239e30800000000000000
+      internalID: 4508999655711650215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 198
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520e6ba4b94bc32c0800000000000000
+      internalID: -4450483752682463195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_9
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 198
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b76c36d8e280890800000000000000
+      internalID: -7491686795331601660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_10
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 198
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357e0610cb37890d0800000000000000
+      internalID: -3415853066046347437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_11
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 198
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b3ae37fe5f9bf50800000000000000
+      internalID: 6897814713085344638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 134
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a502d746b7d1e90800000000000000
+      internalID: -7053345769866110350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 134
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ddf611f1b2f1e50800000000000000
+      internalID: 6782186976279780718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_14
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 134
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc996ed9f1534b00800000000000000
+      internalID: 811582491476991189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 71
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9feee58d2e48640800000000000000
+      internalID: 5081435698514295294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_16
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 70
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43862a407448d5e80800000000000000
+      internalID: -8188243106934396876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 70
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3dee0b7f7ccbee0800000000000000
+      internalID: -1243899530421808207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_18
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 70
+        width: 54
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804f9fa2592c5b20800000000000000
+      internalID: 3124417676598788229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 70
+        width: 54
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b05adafc8cb0f5f0800000000000000
+      internalID: -724872226316595023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 71
+        width: 54
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78421ed10a96b9970800000000000000
+      internalID: 8762713636396409991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 6
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178483c081cc9ff10800000000000000
+      internalID: 2304097088033015921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 6
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258c22688f9f5e510800000000000000
+      internalID: 1577942090260858962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 6
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37112ac8ec6cf8ae0800000000000000
+      internalID: -1544797556739796621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_24
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 6
+        width: 89
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbde028e1b134530800000000000000
+      internalID: 3837941125294775228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_25
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 6
+        width: 89
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0874362c2144f0060800000000000000
+      internalID: 6921825999653128064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_26
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 6
+        width: 91
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a43a64f26e66320800000000000000
+      internalID: 2550979329674922640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_27
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 6
+        width: 78
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7bac438919c31e0800000000000000
+      internalID: -2216736833666369586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snake_yellow_28
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 6
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e611c1cbdf9411470800000000000000
+      internalID: 8363547337135231342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

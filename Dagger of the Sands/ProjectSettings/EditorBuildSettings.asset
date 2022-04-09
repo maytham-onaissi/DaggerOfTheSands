@@ -4,5 +4,59 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e67fe3d2413bdea479fbcc583aa6e4aa
+  - enabled: 1
+    path: Assets/Scenes/TrainingGround.unity
+    guid: 0954d18f3ab3c5042bc9211129ba894e
+  - enabled: 1
+    path: Assets/Scenes/Baghdad.unity
+    guid: 5c991545141503541b823dd24741f69e
+  - enabled: 1
+    path: Assets/Scenes/EtchedRemnants/EtchedRemnants-One.unity
+    guid: 2fe1ac27515973642bd256b3e6112c53
+  - enabled: 1
+    path: Assets/Scenes/EtchedRemnants/EtchedRemnants-Two.unity
+    guid: c707afaa2bb402d41bfd91cb2cd96d95
+  - enabled: 1
+    path: Assets/Scenes/Bosses Layers/BehemothLayer.unity
+    guid: 4b3628cff23d28747929fdf0dab329eb
+  - enabled: 1
+    path: Assets/Scenes/Oasis/Oasis-One.unity
+    guid: 9e1c6debbcc6182499be15e46e394f66
+  - enabled: 1
+    path: Assets/Scenes/Oasis/Oasis-Two.unity
+    guid: c106ed4b51d5e1f458e47103acdb80ed
+  - enabled: 1
+    path: Assets/Scenes/VotK/ValleyOfTheKings-One.unity
+    guid: 7543b06ef8f337247884dc012eccff21
+  - enabled: 1
+    path: Assets/Scenes/VotK/ValleyOfTheKings-Two.unity
+    guid: ddd7bd3812fb0b6428d9297473795139
+  - enabled: 1
+    path: Assets/Scenes/Bosses Layers/FalakLayer.unity
+    guid: 00de837b43c90fe40b29072f4b15f6ad
+  - enabled: 1
+    path: Assets/Scenes/AncientKings.unity
+    guid: 9bb720b586d2c2547ab735d91ebd05b9
+  - enabled: 1
+    path: Assets/Scenes/Bosses Layers/SilaLayer.unity
+    guid: b895d0418da242244bd255f1f917bda6
+  - enabled: 1
+    path: Assets/Scenes/Dunes.unity
+    guid: cc714e651073a914082e40baf1adf901
+  - enabled: 1
+    path: Assets/Scenes/IramOfthePillars.unity
+    guid: 9eaee6dc62618164482373643902c99d
+  - enabled: 1
+    path: Assets/Scenes/Bosses Layers/ZabraqLayer.unity
+    guid: 54adad47658b2e14a9b61ed24ca490bd
+  - enabled: 1
+    path: Assets/Scenes/Al-Ssuradiq.unity
+    guid: 61cc718968fa43447a310823e3088bca
+  - enabled: 1
+    path: Assets/Scenes/Bosses Layers/FinalBossLayer.unity
+    guid: 1e2af091b718ff84f93a993b93d2e46c
   m_configObjects: {}
